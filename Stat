@@ -4,6 +4,41 @@ Project Name: revio
 Project File: C:\source\ndepend\revio.ndproj
 Comparing
 
+Newer Analysis Date: Thu 23 Apr  08:16 most recent  Analyzed by NDepend v4.0.2.6750
+
+Older Analysis Date: Wed 22 Apr  12:39  (19 hours ago) most recent  Analyzed by NDepend v4.0.2.6750
+
+
+Application revio
+
+# IL instructions    :   531 867 to 532 384      (+517   +0.1%)
+# lines of code (LOC)    :   55 375 to 56 292      (+917   +1.7%)
+# lines of comment    :   32 822
+Percentage Comment    :   37% to 36%      (-1%)
+# Assemblies    :   8
+# Namespaces    :   161
+# Types    :   2 872 to 2 875      (+3   +0.1%)
+# Methods    :   29 156 to 29 184      (+28   +0.1%)
+# Fields    :   10 791 to 10 806      (+15   +0.1%)
+
+Coverage:
+Percentage Coverage    :   N/A because no coverage data specified
+# Lines of Code Covered    :   N/A because no coverage data specified
+# Lines of Code Not Covered    :   N/A because no coverage data specified
+
+Third party code used by the application:
+# Third party Assemblies used    :   41
+# Namespaces used    :   125
+# Types used    :   692
+# Methods used    :   1 245 to 1 236      (-9   -0.7%)
+# Fields used    :   45
+===
+Global Summary
+
+Project Name: revio
+Project File: C:\source\ndepend\revio.ndproj
+Comparing
+
 Newer Analysis Date: Fri 24 Apr  10:43 most recent  Analyzed by NDepend v4.0.2.6750
 
 Older Analysis Date: Wed 22 Apr  12:39  (1 day ago) historic  Analyzed by NDepend v4.0.2.6750
