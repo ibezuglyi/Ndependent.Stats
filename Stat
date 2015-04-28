@@ -103,3 +103,38 @@ Third party code used by the application:
 # Methods used    :   1 260 to 1 162      (-98   -7.8%)
 # Fields used    :   45 to 42      (-3   -6.7%)
 ===
+Global Summary
+
+Project Name: revio
+Project File: C:\source\ndepend\revio.ndproj
+Comparing
+
+Newer Analysis Date: Tue 28 Apr  08:03 most recent  Analyzed by NDepend v4.0.2.6750
+
+Older Analysis Date: Mon 27 Apr  10:01  (22 hours ago) historic  Analyzed by NDepend v4.0.2.6750
+
+
+Application revio
+
+# IL instructions    :   532 715 to 316 284      (-216 431   -40.6%)
+# lines of code (LOC)    :   55 742 to 39 999      (-15 743   -28.2%)
+# lines of comment    :   33 422 to 29 452      (-3 970   -11.9%)
+Percentage Comment    :   37% to 42%      (+5%)
+# Assemblies    :   5 to 7      (+2   +40%)
+# Namespaces    :   149 to 61      (-88   -59.1%)
+# Types    :   2 836 to 1 632      (-1 204   -42.5%)
+# Methods    :   29 231 to 16 121      (-13 110   -44.8%)
+# Fields    :   10 894 to 5 333      (-5 561   -51%)
+
+Coverage:
+Percentage Coverage    :   N/A because no coverage data specified
+# Lines of Code Covered    :   N/A because no coverage data specified
+# Lines of Code Not Covered    :   N/A because no coverage data specified
+
+Third party code used by the application:
+# Third party Assemblies used    :   35 to 26      (-9   -25.7%)
+# Namespaces used    :   103 to 87      (-16   -15.5%)
+# Types used    :   638 to 462      (-176   -27.6%)
+# Methods used    :   1 162 to 759      (-403   -34.7%)
+# Fields used    :   42 to 32      (-10   -23.8%)
+===
