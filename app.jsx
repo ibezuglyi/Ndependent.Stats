@@ -24,7 +24,7 @@ define(['jsx!src/InputComponent'
         var key = parsed["Analysis Date"];
         service.push(key, parsed);
         var currentState = this.state;
-        currentState[key] = parsed;
+        currentState.stats[key] = parsed;
         this.setStateAndUpdate(currentState);
       },
       setStateAndUpdate:function(val){
