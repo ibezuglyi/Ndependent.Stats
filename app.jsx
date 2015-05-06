@@ -21,7 +21,7 @@ define(['jsx!src/InputComponent'
       },
       onNewStatSubmited:function(statText){
         var parsed = par.parseText(statText);
-        service.push(parsed["Newer Analysis Date"], parsed);
+        service.push(parsed["Analysis Date"], parsed);
       },
       onServerStatSubmited:function(s){
         this.setState({stats:s.val()});
