@@ -1,8 +1,10 @@
 define(['react'], function(React){
   var InputComponent = React.createClass({
     handleClick:function(){
-      var text = this.refs.inputArea.getDOMNode().value;
+      var node = this.refs.inputArea.getDOMNode()
+      var text = node.value;
       this.props.onStatSubmited(text);
+      node.value = "";
     },
     render:function(){
       return (
