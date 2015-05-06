@@ -12,7 +12,7 @@ define(['jsx!src/InputComponent'
       getInitialState:function(){
         return {
           options:[],
-          stats:[],
+          stats:{},
           diagram:{
             x:[],
             y:[]
@@ -23,7 +23,7 @@ define(['jsx!src/InputComponent'
         var parsed = par.parseText(statText);
         var key = parsed["Analysis Date"];
         service.push(key, parsed);
-        var stats = this.state.stats;
+        var stats = this.state.stats || {};
         stats[key] = parsed;
         this.setStateAndUpdate(stats);
       },
