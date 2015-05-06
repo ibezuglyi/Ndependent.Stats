@@ -21,11 +21,18 @@ define(['jsx!src/InputComponent'
       },
       onNewStatSubmited:function(statText){
         var parsed = par.parseText(statText);
-        service.push(parsed["Analysis Date"], parsed);
+        var key = parsed["Analysis Date"];
+        service.push(key, parsed);
+        var currentState = this.state;
+        currentState[key] = parsed;
+        this.setStateAndUpdate(currentState);
+      },
+      setStateAndUpdate:function(val){
+        this.setState({stats:val});
+        this.mapDiagram("Assemblies");
       },
       onServerStatSubmited:function(s){
-        this.setState({stats:s.val()});
-        this.mapDiagram("Assemblies");
+        this.setStateAndUpdate(s.val());
       },
       mapDiagram:function(selectedKey){
         var x = [];
