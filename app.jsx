@@ -11,6 +11,7 @@ define(['jsx!src/InputComponent'
     this.AppView = React.createClass({
       getInitialState:function(){
         return {
+          selectedKey:"",
           options:[],
           stats:{},
           diagram:{
@@ -48,8 +49,14 @@ define(['jsx!src/InputComponent'
             }
           });
         });
-        this.setState({"diagram":{"x":x, "y":y}});
-        this.setState({"options":_.uniq(options)});
+        this.setState({
+                        "diagram":{
+                          "x":x,
+                          "y":y
+                        },
+                        "options":_.uniq(options),
+                        "selectedKey":selectedKey
+          });
       },
       componentDidMount:function(){
         service.bind(this.onServerStatSubmited);
@@ -62,7 +69,7 @@ define(['jsx!src/InputComponent'
           <div className="container">
             <div className="row padded-row" >
               <div className="col s3">
-                <SelectOption selected="Assemblies" options={this.state.options} onchange={this.onSelected}></SelectOption>
+                <SelectOption selected={this.state.selectedKey} options={this.state.options} onchange={this.onSelected}></SelectOption>
               </div>
               <div className="col s9">
                 <BarChart width={600} height={300} yVals={this.state.diagram.y}></BarChart>
