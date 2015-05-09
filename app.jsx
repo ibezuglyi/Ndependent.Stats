@@ -72,7 +72,7 @@ define(['jsx!src/InputComponent'
                 <SelectOption selected={this.state.selectedKey} options={this.state.options} onchange={this.onSelected}></SelectOption>
               </div>
               <div className="col s9">
-                <BarChart width={600} height={300} yVals={this.state.diagram.y}></BarChart>
+                <BarChart width={600} height={300} vals={this.state.diagram}></BarChart>
                 <InputComponent onStatSubmited={this.onNewStatSubmited}></InputComponent>
               </div>
             </div>
