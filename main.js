@@ -29,7 +29,7 @@ require.config({
   }
 });
 
-require(['jsx!app'], function(App) {
+require(['app'], function(App) {
 
   var app = new App();
   app.init();

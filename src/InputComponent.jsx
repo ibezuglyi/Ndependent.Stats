@@ -9,7 +9,7 @@ define(['react'], function(React){
     render:function(){
       return (
         <div>
-        <div className="row">
+        <div className="box">
           <div className="input-field col s12">
             <textarea ref="inputArea" id="textarea1" className="materialize-textarea"></textarea>
             </div>

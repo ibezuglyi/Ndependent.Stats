@@ -13,7 +13,8 @@
 	"devDependencies": {},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"start": "ws --port 8111"
+		"start": "ws --port 8111",
+		"build":"node_modules/.bin/jsx -x jsx src out"
 	},
 	"author": "",
 	"license": "ISC"

@@ -1,5 +1,5 @@
 define(['react','lodash'], function(React, _){
-  var selectComponent = React.createClass({
+  var selectComponent = React.createClass({displayName: "selectComponent",
     onOptionSelected:function(e){
       var newVal = e.target.attributes["value"].value;
       this.setState({selected:newVal});
@@ -20,11 +20,11 @@ define(['react','lodash'], function(React, _){
       var _this = this;
       var options = _.map(this.props.options, function(val){
         var isActive = _this.state.selected === val ? "active" : "";
-        return <a className={"collection-item "+isActive} onClick={_this.onOptionSelected} href="#!" value={val}>{val}</a>;
+        return React.createElement("a", {className: "collection-item "+isActive, onClick: _this.onOptionSelected, href: "#!", value: val}, val);
       });
-      return (<div className="collection no-pad">
-        {options}
-      </div>);
+      return (React.createElement("div", {className: "collection no-pad"}, 
+        options
+      ));
     },
   });
   return selectComponent;
