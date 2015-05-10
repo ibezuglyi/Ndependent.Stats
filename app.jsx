@@ -1,9 +1,9 @@
-define(['jsx!src/InputComponent'
+define(['out/InputComponent'
         ,'react'
-        ,'src/service/statParser.js'
-        ,'src/service/httpService.js'
-        ,'jsx!src/StatChart'
-        ,'jsx!src/SelectOption'
+        ,'out/service/statParser.js'
+        ,'out/service/httpService.js'
+        ,'out/StatChart'
+        ,'out/SelectOption'
         ],function(InputComponent, React, par, service, BarChart,SelectOption){
 
 
@@ -68,13 +68,17 @@ define(['jsx!src/InputComponent'
         return (
           <div className="container">
             <div className="row padded-row" >
-              <div className="col s3">
+              <div className="col s3 box no-pad">
                 <SelectOption selected={this.state.selectedKey} options={this.state.options} onchange={this.onSelected}></SelectOption>
               </div>
               <div className="col s9">
-                <BarChart width={600} height={300} vals={this.state.diagram}></BarChart>
+                <div className="box chart">
+                <BarChart  width={1000} height={400} vals={this.state.diagram}></BarChart>
+                </div>
+                <div>
                 <InputComponent onStatSubmited={this.onNewStatSubmited}></InputComponent>
               </div>
+            </div>
             </div>
           </div>
         );
